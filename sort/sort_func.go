@@ -253,23 +253,3 @@ func cardinalitySort(arr []int) {
 	}
 
 }
-
-//func main() {
-//	arr := make([]int, 100)
-//	for i := 0; i < 100; i++ {
-//		arr[i] = rand.Intn(1000)
-//	}
-//	display("排序前 ：", arr)
-//	//bubbleSort(arr)
-//	//selectSort(arr)
-//	//inSort(arr)
-//	//shellSortExchange(arr)
-//	//shellSortIn(arr)
-//	//quickSort(arr, 0, len(arr)-1)
-//	//mergeSort(arr)
-//	//temp := make([]int, 100)
-//	//mergeSortR(arr, temp, 0, len(temp)-1)
-//	cardinalitySort(arr)
-//	display("排序后 :", arr)
-//
-//}
