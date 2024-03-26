@@ -77,3 +77,37 @@ func BinarySearchR(arr []int, left, right, tar int) []int {
 		return indices
 	}
 }
+
+// 二分查找(回顾)
+func binarySearchP(arr []int, target int) []int {
+	left := 0
+	right := len(arr)
+	for left <= right {
+		mid := (left + right) >> 1
+		if arr[mid] > target {
+			right = mid - 1
+		} else if arr[mid] < target {
+			left = mid + 1
+		} else {
+			var indices []int
+			cur := mid - 1
+			for {
+				if cur < 0 || arr[cur] != target {
+					break
+				}
+				indices = append(indices, cur)
+				cur -= 1
+			}
+			indices = append(indices, cur)
+			for {
+				if cur > len(arr) || arr[cur] != target {
+					break
+				}
+				indices = append(indices, cur)
+				cur += 1
+			}
+			return indices
+		}
+	}
+	return []int{}
+}

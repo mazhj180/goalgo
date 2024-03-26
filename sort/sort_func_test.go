@@ -31,3 +31,9 @@ func Test(t *testing.T) {
 	bubbleSort(arr)
 	display("排序后", arr)
 }
+
+func Test1(t *testing.T) {
+	const L = 10
+	str := "abcdefghijk"[:L-1]
+	fmt.Println(str)
+}
