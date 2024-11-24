@@ -1,0 +1,2 @@
+# goalgo
+algorithm for golang
