@@ -35,3 +35,9 @@ func TestSelectSort(t *testing.T) {
 	sort.SelectionSort(randomData)
 	fmt.Println(randomData)
 }
+
+func TestInsertionSort(t *testing.T) {
+	fmt.Println(randomData)
+	sort.InsertSort(randomData)
+	fmt.Println(randomData)
+}
