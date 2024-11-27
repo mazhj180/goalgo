@@ -30,7 +30,7 @@ func (l *DoublyList[T]) InsertAtHead(elem T) {
 	l.size++
 }
 
-func (l *DoublyList[T]) InsertAtTail(elem T) {
+func (l *DoublyList[T]) Insert(elem T) {
 	newNode := &doublyListNode[T]{elem: elem}
 	if l.tail != nil {
 		l.tail.next = newNode
@@ -56,7 +56,7 @@ func (l *DoublyList[T]) RemoveHead() error {
 	return nil
 }
 
-func (l *DoublyList[T]) RemoveTail() error {
+func (l *DoublyList[T]) Remove() error {
 	if l.IsEmpty() {
 		return errors.New("list is empty")
 	}

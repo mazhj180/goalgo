@@ -29,7 +29,7 @@ func (l *SinglyList[T]) InsertAtHead(v T) {
 	l.size++
 }
 
-func (l *SinglyList[T]) InsertAtTail(v T) {
+func (l *SinglyList[T]) Insert(v T) {
 	newNode := &singlyNode[T]{
 		elem: v,
 	}
@@ -54,7 +54,7 @@ func (l *SinglyList[T]) RemoveHead() error {
 	return nil
 }
 
-func (l *SinglyList[T]) RemoveTail() error {
+func (l *SinglyList[T]) Remove() error {
 	if l.tail == nil {
 		return errors.New("list is empty")
 	}

@@ -29,7 +29,7 @@ func TestDoublyListInsert(t *testing.T) {
 	fmt.Printf("\n")
 
 	for _, v := range data {
-		dl.InsertAtTail(v)
+		dl.Insert(v)
 	}
 	// 逆序遍历
 	fmt.Print("逆序遍历 : ")
@@ -38,7 +38,7 @@ func TestDoublyListInsert(t *testing.T) {
 	})
 	fmt.Println()
 
-	_ = dl.RemoveTail()
+	_ = dl.Remove()
 	fmt.Print("删除尾元素后：")
 	dl.Traverse(func(v int) {
 		fmt.Printf("%d,", v)

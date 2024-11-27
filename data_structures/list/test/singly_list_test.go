@@ -41,14 +41,14 @@ func TestSinglyList_Tail(t *testing.T) {
 	sl := list.NewSinglyList[int]()
 
 	for _, v := range data {
-		sl.InsertAtTail(v)
+		sl.Insert(v)
 	}
 	sl.Traverse(func(v int) {
 		fmt.Printf("%d,", v)
 	})
 
 	fmt.Printf("\n移除尾部: ")
-	if err := sl.RemoveTail(); err != nil {
+	if err := sl.Remove(); err != nil {
 		t.Errorf("Error while removing tail: %s", err)
 	}
 	sl.Traverse(func(v int) {
