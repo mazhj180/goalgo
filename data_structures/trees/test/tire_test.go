@@ -2,7 +2,7 @@ package test
 
 import (
 	"fmt"
-	"mazhj.com/goalgo/data_structures/trees"
+	"goalgo/data_structures/trees"
 	"testing"
 )
 

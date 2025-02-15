@@ -3,8 +3,8 @@ package test
 import (
 	cl "container/list"
 	"fmt"
+	"goalgo/data_structures/list"
 	"math/rand"
-	"mazhj.com/goalgo/data_structures/list"
 	"testing"
 )
 

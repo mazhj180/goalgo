@@ -1,7 +1,7 @@
 package kmp_test
 
 import (
-	"mazhj.com/goalgo/kmp"
+	"goalgo/kmp"
 	"testing"
 )
 

@@ -2,7 +2,7 @@ package test
 
 import (
 	"fmt"
-	"mazhj.com/goalgo/sort"
+	"goalgo/sort"
 	"testing"
 )
 

@@ -2,7 +2,7 @@ package test
 
 import (
 	"fmt"
-	stack2 "mazhj.com/goalgo/data_structures/stack"
+	stack2 "goalgo/data_structures/stack"
 	"testing"
 )
 

@@ -1,3 +1,3 @@
-module mazhj.com/goalgo
+module goalgo
 
 go 1.21.3
